@@ -1,0 +1,39 @@
+.empresa{
+  margin-top: 52px;
+  .columnas{
+    margin-top: 20px;
+    margin-right: 5px;
+
+    .fondoUser{
+      height: 160%;
+      width: 100%;
+      img{
+        display: block;
+        height: 100%;
+      }
+    }
+
+    .imgUser{
+      position: relative;
+      bottom: 125px;
+      left: 15px;
+      height: 180px;
+      border-style: solid;
+      border-width: 5px;
+      border-color: #e2e5e7;
+    }
+    .imgAndButtons{
+      height: 75px;
+      .sendMessage{
+        margin-right: 7px;
+      }
+    }
+    .text{
+      position: relative;
+      left: 45px;
+      .descLocate{
+        color: rgba(0,0,0,.6);
+      }
+    }      
+  }
+}

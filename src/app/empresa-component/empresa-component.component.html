@@ -1,0 +1,13 @@
+<div class="card mt-3" style="width: 18rem; height: 15rem;">
+  <a [routerLink]="['/empresa', this.empresa.id]"
+  routerLinkActive="router-link-active">  
+    <div class="card-body empresa">
+      <img [src]="this.empresa.img" alt="">
+      <div class="mt-2">
+        <h5 class="card-title">{{this.empresa.name}}</h5>
+        <h6 class="card-subtitle mb-2 text-muted">{{this.empresa.localitat}}</h6>
+        <p class="card-text">{{this.empresa.shortDesc}}</p>
+      </div>
+    </div>
+  </a>
+</div>

@@ -1,0 +1,15 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<nav class="nav justify-content-center bg-primary navbar-static-top">
+  <a class="navbar-brand" [routerLink]="['/home']">
+      <img class="iconPage" src="https://getbootstrap.com/docs/4.3/assets/brand/bootstrap-solid.svg" width="30" height="30" alt="">
+  </a>
+  <form class="form-inline search">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+  </form>
+  <a class="nav-link text-white" [routerLink]="['/home']" routerLinkActive="router-link-active" ><i class="fas fa-home"></i><br>Inicio</a>
+  <a class="nav-link text-white" [routerLink]="['/jobs']"><i class="fas fa-briefcase"></i><br>Empresasa</a>
+  <a class="nav-link text-white" [routerLink]="['/']"><i class="fas fa-user-friends"></i><br>Mi red</a>
+  <a class="nav-link text-white" [routerLink]="['/']"><i class="far fa-comments"></i><br>Mensajes</a>
+  <a class="nav-link text-white" [routerLink]="['/']"><i class="far fa-bell"></i><br>Notificaciones</a>
+</nav>
+<router-outlet></router-outlet>

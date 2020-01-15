@@ -1,0 +1,15 @@
+<a [routerLink]="['/empresa', this.empresa.id]"
+  routerLinkActive="router-link-active">
+  <div class="row">
+  
+    <div class="col col-1">
+      <img [src]="this.empresa.img" alt="">
+    </div>
+    <div class="col">
+          <p><strong>{{this.experiencia.position}}</strong></p>
+          <p>{{this.empresa.name}}</p>
+          <p>{{this.experiencia.time}}</p>
+          <p class="locate">{{this.empresa.localitat}}</p>
+    </div>
+  </div>
+</a>

@@ -1,0 +1,24 @@
+<div class="card notice">
+    <div class="card-body">
+      <a [routerLink]="['/user', this.user.id]">
+        <div class="row headerNotice">
+          <div class="col col-1">
+            <img  [src]="this.user.userImg" alt="">
+          </div>
+          <div class="col">
+            <h5 class="card-title" >{{this.user.name}}</h5>
+            <h6 class="card-subtitle mb-2 text-muted">{{this.user.uPosition}}</h6>
+          </div>
+        </div>
+      </a>
+      <p class="card-text">{{this.notice.text}}</p>
+      <img class="card-img-top" [src]="this.notice.img" alt="Card image cap">
+
+    </div>
+    <div class="card-footer bg-transparent text-muted">
+        <button type="button" class="btn bg-transparent"> <i class="far fa-thumbs-up recomendarIcon"></i> Recomendar</button>
+        <button type="button" class="btn bg-transparent"><i class="far fa-comment"></i></button>
+        <button type="button" class="btn bg-transparent"><i class="far fa-share-square"></i></button>
+
+    </div>
+  </div>

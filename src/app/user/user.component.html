@@ -1,0 +1,55 @@
+<div class="row justify-content-xl-center user">
+  <div class="col col-xl-6 columnas">
+      <div class="card">
+        <div class="fondoUser">
+          <img [src]="this.user.imgFondo" class="card-img-top" alt="...">
+        </div>
+        <div class="card-body">
+          <div class="row imgAndButtons">
+            <div class="col col-xl-8">
+              <img class="imgUser" [src]="this.user.userImg" alt="">
+            </div>
+            <div class="col col-xl-4 text-right">
+              <button type="button" class="btn btn-other sendMessage">Enviar mensaje</button>
+              <button type="button" class="btn btn-outline-dark">Más...</button>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col col-xl-8 textHeader">
+              <div class="text">
+                <h4>{{this.user.name}}</h4>
+                <p>{{this.user.desc}}</p>
+                <p>{{this.user.place}}</p>
+              </div>
+            </div>
+            <div class="col col-xl-4">
+          
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card mt-3">
+        <div class="card-body">
+          <h5 class="card-title">Acerca de</h5>
+          <p class="card-text" [innerHTML]="this.user.acercaDe"></p>
+        </div>
+      </div>
+      <div class="card mt-3">
+          <div class="card-body">
+            <h5 class="card-title">Experiencia</h5>
+            <br>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item" *ngFor="let exp of this.user.experiencia" >
+                  <app-expirience-empresa [experiencia]="exp"></app-expirience-empresa>
+              </li>
+            </ul>
+          </div>
+      </div>
+      <div class="card mt-3">
+
+      </div>
+  </div>
+  <div class="col col-xl-2 columnas">
+    
+  </div>
+</div>

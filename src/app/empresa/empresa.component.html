@@ -1,0 +1,47 @@
+<div class="row justify-content-xl-center empresa">
+    <div class="col col-xl-8 columnas">
+        <div class="card">
+          <div class="fondoUser">
+            <img [src]="this.empresa.fondoImg" class="card-img-top" alt="...">
+          </div>
+          <div class="card-body">
+            <div class="row imgAndButtons">
+              <img class="imgUser" [src]="this.empresa.img" alt="">
+              <div class="text">
+                  <h4>{{this.empresa.name}}</h4>
+                  <p class="descLocate">{{this.empresa.shortDesc}} · {{this.empresa.localitat}}</p>
+              </div>
+            </div>
+            <div class="row">
+              <button type="button" class="btn btn-other ml-3">Visitar sitio web</button>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col col-2">
+            <div class="card mt-3">
+                <ul class="list-group">
+                    <li class="list-group-item">Inicio</li>
+                    <li class="list-group-item">Acerca de</li>
+                    <li class="list-group-item">Empleos</li>
+                    <li class="list-group-item">Personas</li>
+                    <li class="list-group-item">Anuncios</li>
+                </ul>
+            </div>
+          </div>
+          <div class="col">
+              <div class="card mt-3">
+                  <div class="card-body">
+                      <h5 class="card-title">Resumen</h5>
+                      <p class="card-text" [innerHTML]="this.empresa.desc"></p>
+                  </div>
+              </div>
+            </div>
+            <div class="col col-3">
+                <div class="card mt-3" style="height: 200px;">
+                    
+                </div>
+              </div>
+      </div>
+    </div>
+  </div>

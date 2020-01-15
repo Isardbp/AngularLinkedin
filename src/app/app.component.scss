@@ -1,0 +1,18 @@
+nav{
+  overflow: hidden;
+  position: fixed;
+  top:0;
+  width: 100%;
+  z-index: 99;
+  .search{
+    margin-right: 100px;
+  }
+  a{
+    text-align: center;
+    font-size: 12px;
+  }
+  .iconPage{
+    position: relative;
+    top: 7px;
+  }
+}

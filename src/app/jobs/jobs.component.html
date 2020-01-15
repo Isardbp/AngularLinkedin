@@ -1,0 +1,14 @@
+<div class="row justify-content-xl-center jobs">
+    <div class="col col-xl-8 columnas">
+      <div class="card mt-3">
+        <div class="card-body">
+          <h5 class="card-title">Empresas de tu interès</h5>
+          <div class="row">
+            <div class="col-3" *ngFor="let empresa of this.empreses">
+                <app-empresa-component [empresa]="empresa"></app-empresa-component>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
